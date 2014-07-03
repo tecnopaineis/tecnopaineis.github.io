@@ -8,3 +8,7 @@ url: "http://tecnopaineis.com.br"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#sass settings
+sass:
+  sass_dir: assets/stylesheets/_sass
