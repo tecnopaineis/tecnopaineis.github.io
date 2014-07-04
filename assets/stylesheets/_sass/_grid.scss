@@ -1,6 +1,6 @@
 //grid-config
-$grid_width: 60px;
-$grid_cutter: 20px;
+$grid_width: 38px;
+$grid_cutter: 10px;
 
 //font-config
 $font_size_base: 16;
@@ -15,6 +15,11 @@ $font_size_base: 16;
   position: relative;
   margin-left: $grid_cutter / 2;
   margin-right: $grid_cutter / 2;
+}
+
+@mixin push($columns) {
+  position: relative;
+  left: $columns*($grid_width + $grid_cutter);
 }
 
 @mixin alpha{

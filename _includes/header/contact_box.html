@@ -1,0 +1,41 @@
+<section class='contact-box'>
+  <section class='content'>
+    <article class='form'>
+      <h2>Contato</h2>
+      <form action="" method="get" accept-charset="utf-8">
+        <section class='column medium'>
+          <p>
+            <label>Nome*<input type="text" name="" value="" required></label>
+          </p>
+          <p>
+            <label>E-mail*<input type="text" name="" value="" required></label>
+          </p>
+        </section>
+        <section class='column medium'>
+          <p>
+            <label>Telefone*<input type="text" name="" value="" required></label>
+          </p>
+          <p>
+            <label>Título*<input type="text" name="" value="" required></label>
+          </p>
+        </section>
+        <section class='column large'>
+          <p>
+            <label>Mensagem* <textarea name="" required></textarea></label>
+          </p>
+          <p>
+            <input type="submit" name="" value="Enviar">
+          </p>
+        </section>
+      </form> 
+    </article>
+
+    <aside>
+      <p>Telefone: {{site.data.contact_info.tel}}</p>
+      <p>E-mail: {{site.data.contact_info.email}}</p>
+      <p>Endereço: {{site.data.contact_info.address}}</p>
+    </aside>
+
+    <a href="javascript://" class="close">Fechar | X</a>
+  </section>
+</section>

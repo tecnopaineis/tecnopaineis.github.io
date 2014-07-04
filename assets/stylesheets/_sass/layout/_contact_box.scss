@@ -1,0 +1,95 @@
+@import "base";
+@import "grid";
+
+.contact-box{
+  border-top: 3px solid $blue;
+  background: $blue;
+  color: #fff;
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 200ms ease-out;
+     -moz-transition: all 200ms ease-out;
+       -o-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+
+  &.openned{
+    min-height: 225px;
+  }
+
+  .column{
+    &.medium{
+      @include grid(4);
+    }
+    &.large{
+      @include grid(5);
+    }
+  }
+
+  .content{
+    @include container;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  a.close{
+    font-size: 12px;
+    color: #fff;
+    text-transform: lowercase;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+  }
+}
+
+.contact-box .form{
+  h2{
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  form{
+    margin-top: 10px;
+
+    label{
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    input[type=text],
+    textarea{
+      border: none;
+      color: #fff;
+      width: 97%;
+      padding: 5px 3px;
+      background: lighten($blue, 20%);
+    }
+
+    textarea{
+      height: 65px;
+    }
+
+    input[type=submit]{
+      @include grid(2);
+      @include omega;
+      border: none;
+      color: $blue;
+      font-size: 12px;
+      background: #fff;
+      float: right;
+      padding: 3px 0;
+      margin-top: 5px;
+    }
+  }
+}
+
+.contact-box aside{
+  @include grid(6);
+  @include push(1);
+  font-size: 12px;
+  margin-top: 10px;
+
+  p{
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "base";
+@import "grid";
+
+header.main .content{
+  @include container;
+  font-size: 14px;
+  padding-top: 40px;
+  position: relative;
+
+  figure{
+    @include grid(5);
+
+    &.current-logo{
+    @include grid(6);
+    }
+  }
+
+  a.contact{
+    @include grid(3);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    background: $blue;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0;
+
+    i{
+      margin-right: 2px;
+      font-size: 12px;
+    }
+  }
+}
+
+header.main .content ul{
+  section{
+    @include grid(2);
+    @include push(1);
+
+    &:nth-child(2){
+      @include push(2);
+    }
+
+    &:nth-child(3){
+      @include push(3);
+    }
+  }
+
+  li{
+    margin-top: 10px;
+  }
+
+  a{
+    color: #000;
+    border-bottom: 1px dotted #000;
+    display: block;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
