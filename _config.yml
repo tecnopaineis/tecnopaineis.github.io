@@ -12,3 +12,6 @@ permalink: pretty
 #sass settings
 sass:
   sass_dir: assets/stylesheets/_sass
+
+#ignore files
+exclude: ["vendor/cache", "Guardfile", 'Gemfile', 'Gemfile.lock']
