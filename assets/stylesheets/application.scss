@@ -38,7 +38,17 @@ ul, li{ list-style: none}
   zoom: 1;
 }
 
+#page {
+   min-height:100%;
+   position:relative;
+}
+
+#content{
+  padding-bottom: 25px;
+}
+
 // LAYOUT
 @import "layout/header";
 @import "layout/contact_box";
+@import "layout/footer";
 
