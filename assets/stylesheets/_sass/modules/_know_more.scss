@@ -1,0 +1,14 @@
+a.know-more{
+  font-size: 15px;
+  margin-top: 20px;
+  display: block;
+  background: url(/assets/images/arrow-right.svg) no-repeat top left;
+  height: 40px;
+  padding-left: 48px;
+  padding-top: 9px;
+
+  &.black{
+    background: url(/assets/images/arrow-right-black.svg) no-repeat top left;
+    color: #000;
+  }
+}

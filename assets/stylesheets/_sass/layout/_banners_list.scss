@@ -1,0 +1,90 @@
+.banners-list{
+  @include container;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #fff;
+
+  article{
+    @include grid(20);
+    height: 350px;
+    position: relative;
+
+    figure{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: $z-index-negative;
+    }
+
+    a{
+      color: #fff;
+      @include push(1);
+    }
+  }
+}
+
+.banners-list article > aside{
+  @include grid(6);
+  @include alpha;
+  background: url(/assets/images/dotscreen-dark.png) rgba(#000, 0.2);
+  height: 100%;
+
+  h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-left: 48px;
+  }
+
+  p{
+    margin-top: 10px;
+    padding: 10px 58px 10px 48px;
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+$blue-footer: #006F9D;
+
+.banners-list footer{
+  background: $blue-footer;
+  z-index: $z-index-medium;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  h4{
+    font-size: 30px;
+    font-weight: 300;
+    @include push(1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  aside{
+    @include grid(6);
+    @include omega;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: $blue;
+    padding: 20px 0;
+
+    h5{
+      background: url(/assets/images/arrow-down.svg) no-repeat top right;
+      text-transform: uppercase;
+      border-bottom: 1px dotted #fff;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h5, p{
+      @include grid(4);
+      @include push(1);
+      @include alpha;
+      @include omega;
+    }
+  }
+}

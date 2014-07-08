@@ -44,11 +44,14 @@ ul, li{ list-style: none}
 }
 
 #content{
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 // LAYOUT
+@import "modules/know_more";
 @import "layout/header";
 @import "layout/contact_box";
 @import "layout/footer";
+@import "layout/banners_list";
+@import "layout/highlights";
 
