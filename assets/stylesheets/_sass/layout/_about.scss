@@ -1,0 +1,74 @@
+#about{
+  @include container;
+  font-size: 12px;
+
+  h2{
+    text-transform: uppercase;
+  }
+
+  h2, h3{
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-top: 40px;
+  }
+}
+
+#about aside{
+  @include grid(6);
+
+  p{
+    margin-top: 20px;
+  }
+}
+
+#about > article{
+  @include grid(14);
+  margin-top: 20px;
+
+  figure{
+    @include grid(6);
+    @include alpha;
+  }
+
+  p{
+    @include grid(8);
+    @include omega;
+  }
+}
+
+#about .structure{
+  figure{
+    margin-top: 20px;
+  }
+
+  > figure{
+    @include grid(20);
+  }
+
+  .office{
+    @include push(6);
+
+    figure{
+      @include grid(7);
+      margin-top: 10px;
+    }
+
+    p{
+      @include grid(7);
+      @include omega;
+      margin-top: 10px;
+    }
+  }
+
+  .stock{
+    @include push(6);
+    clear: left;
+
+    figure{
+      @include grid(8);
+      margin-top: 10px;
+    }
+  }
+}
