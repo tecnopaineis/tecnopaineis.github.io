@@ -1,0 +1,64 @@
+$image-placeholder: #E6E7E8;
+
+.cases{
+  aside{
+    a{
+      @include grid(4);
+      @include alpha;
+      font-size: 16px;
+      color: #000;
+      display: block;
+      margin-top: 20px;
+      height: 27px;
+
+      &:hover, &.active{
+        color: $blue;
+        background: url('/assets/images/arrow-right-blue.svg') no-repeat right top;
+      }
+    }
+  }
+
+  .case-list{
+    @include grid(14);
+    padding-top: 20px;
+
+    > figure{
+      @include grid(4);
+    }
+
+    article{
+      @include grid(9);
+      @include omega;
+      float: right;
+      padding-bottom:20px;
+
+      h3{
+        font-size: 18px;
+        border-bottom: 1px solid #000;
+        font-weight: 300;
+      }
+
+      li{
+        @include grid(3);
+        background: $image-placeholder;
+        text-align: center;
+        margin-top:20px;
+        min-height: 133px;
+        line-height: 133px;
+
+        &:nth-child(3n+1){
+          @include alpha;
+          clear: left;
+        }
+
+        &:nth-child(3n){
+          @include omega;
+        }
+
+        img{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

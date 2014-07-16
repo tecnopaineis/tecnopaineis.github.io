@@ -1,5 +1,20 @@
 jQuery(document).ready(function($) {
-  new ContactBoxManager($('header.main a.contact'), $('header.main .contact-box'))
+  new ContactBoxManager($('header.main a.contact'), $('header.main .contact-box'));
+
+  var $galleryImages = $('.gallery-images li a');
+  if($galleryImages[0]){
+    $galleryImages.fancybox({
+      maxWidth  : 800,
+      maxHeight : 600,
+      fitToView : false,
+      width   : '70%',
+      height    : '70%',
+      autoSize  : false,
+      closeClick  : false,
+      openEffect  : 'none',
+      closeEffect : 'none'
+    });
+  }
 });
 
 var ContactBoxManager = function($openBnt, $box){
