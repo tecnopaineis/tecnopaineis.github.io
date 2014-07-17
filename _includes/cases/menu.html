@@ -1,0 +1,9 @@
+<aside>
+  <ul>
+    {% for case in site.cases %}
+      <li>
+        <a href="{{case.url}}" title="{{case.title}}" {%if case.title == page.title%} class="active" {%endif%}>{{case.title}}</a>
+      </li>
+    {% endfor%}
+  </ul>
+</aside>

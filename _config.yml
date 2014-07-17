@@ -15,3 +15,8 @@ sass:
 
 #ignore files
 exclude: ["vendor/cache", "Guardfile", 'Gemfile', 'Gemfile.lock']
+
+#collections
+collections:
+  cases:
+    output: true
