@@ -1,0 +1,39 @@
+$gray-dark: #6d6e71;
+
+.partners{
+  aside{
+    @include grid(6);
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  article{
+    @include grid(14);
+
+    figure{
+      @include grid(4);
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted $gray-dark;
+      height: 87px;
+      line-height: 87px;
+
+      &:nth-child(3n+1){
+        @include alpha;
+        clear: left;
+      }
+      &:nth-child(3n+2){
+        @include push(1);
+      }
+
+      &:nth-child(3n){
+        @include omega;
+        @include push(2);
+      }
+
+      img{
+        vertical-align: middle;
+      }
+    }
+  }
+}
