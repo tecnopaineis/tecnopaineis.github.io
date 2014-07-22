@@ -10,6 +10,10 @@ header.main .content{
   figure{
     @include grid(5);
 
+    img{
+      width: 229px;
+    }
+
     &.current-logo{
     @include grid(6);
     }
