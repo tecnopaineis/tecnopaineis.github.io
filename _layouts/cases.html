@@ -1,17 +1,15 @@
 ---
-layout: default
+layout: inner_pages
 ---
 
-<section class='inner-page cases'>
-  <h2>Cases</h2>
+<h2>Cases</h2>
 
-  {% include cases/menu.html %}
+{% include cases/menu.html %}
 
-  <section class='case-list'>
-    <figure>
-      <img src="{{page.logo_url}}" alt="Extratech Logo">
-    </figure>
-    
-    {{ content }}
-  </section>
+<section class='case-list'>
+  <figure>
+    <img src="{{page.logo_url}}" alt="{{page.title}}">
+  </figure>
+  
+  {{ content }}
 </section>
